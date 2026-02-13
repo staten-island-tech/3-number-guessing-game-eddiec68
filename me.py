@@ -21,7 +21,24 @@ while color != "stop":
     color = input("What is your favorite color? (type stop to finish)")
 print("Cool Color!") """
 
+import random
+randomnumber = random.randint(1,10)
+def game():
+    gtn = 0
+    while gtn != randomnumber:
+        gtn = int(input("Guess the number between 1 and 10 "))
+        if gtn > randomnumber:
+            print ("Too High")
+        elif gtn < randomnumber:
+            print ("Too Low")
+        elif gtn == randomnumber:
+            print ("You Win!!!")
+game()
 
-RandomNumber = int(str("1,2,3,4,5,6,7,8,9,10"))
-print 
+
+
+
+
+
+
 
