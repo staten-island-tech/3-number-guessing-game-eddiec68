@@ -26,14 +26,19 @@ randomnumber = random.randint(1,10)
 def game():
     gtn = 0
     while gtn != randomnumber:
-        gtn = int(input("Guess the number between 1 and 10 "))
+        gtn = int(input("Guess the number between 1 and 10"))
+        guess_history = list(gtn)
+        print ("Wrong guesses:", guess_history)
         if gtn > randomnumber:
             print ("Too High")
         elif gtn < randomnumber:
             print ("Too Low")
         elif gtn == randomnumber:
-            print ("You Win!!!")
+            print ("You Win!!!") 
 game()
+
+
+
 
 
 
