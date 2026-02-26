@@ -26,12 +26,14 @@ randomnumber = random.randint(1,10)
 def game():
     gtn = 0
     while gtn != randomnumber:
+        gtn = int(input("Guess number between 1 and 10:"))
         list = []
         for i in range (gtn):
-            gtn = int(input("Enter Number:"))
             list.append(gtn)
             print ("Wrong guesses:", list)
-            if gtn > randomnumber:
+            if gtn > 10:
+                print("Beyond Range")
+            if gtn > randomnumber and gtn <= 10:
                 print ("Too High")
             elif gtn < randomnumber:
                 print ("Too Low")
