@@ -1,0 +1,3 @@
+def occuppied(n,o,t):
+    print(n,o,t)
+occuppied(1,1,1)
