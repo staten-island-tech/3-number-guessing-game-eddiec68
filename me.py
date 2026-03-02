@@ -28,17 +28,17 @@ def game():
     while gtn != randomnumber:
         gtn2 = int(input("Guess number between 1 and 10:"))
         list = []
-        for i in range (gtn):
-            list.append(gtn)
+        for i in range (10):
+            list.append(gtn2)
             print ("Wrong guesses:", list)
-            if gtn2 > 10:
-                print("Beyond Range")
-            if gtn2 > randomnumber and gtn <= 10:
-                print ("Too High")
-            elif gtn2 < randomnumber:
-                print ("Too Low")
-            elif gtn2 == randomnumber:
-                print ("You Win!!!") 
+        if gtn2 > 10:
+            print("Beyond Range")
+        if gtn2 > randomnumber and gtn <= 10:
+            print ("Too High")
+        elif gtn2 < randomnumber:
+            print ("Too Low")
+        elif gtn2 == randomnumber:
+            print ("You Win!!!")     
 game()
 
 

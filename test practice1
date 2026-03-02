@@ -1,3 +1,14 @@
-def occuppied(n,o,t):
-    print(n,o,t)
-occuppied(1,1,1)
+def lang(sent):
+    s=0
+    t=0
+    for i in sent:
+        if i.lower == "s":
+            s+=1
+        elif i.lower == "t":
+            t+=1
+    if s>=t:
+        print("French")
+    elif s<=t:
+        print("English")
+lang("Sophie is super odd ttt")
+
