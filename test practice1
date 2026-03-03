@@ -1,4 +1,4 @@
-def lang(sent):
+""" def lang(sent):
     s=0
     t=0
     for i in sent:
@@ -10,5 +10,30 @@ def lang(sent):
         print("French")
     elif s<=t:
         print("English")
-lang("Sophie is super odd ttt")
+lang("Sophie is super odd ttt") """
+
+""" def honi(sent):
+    h=0
+    o=0
+    n=0
+    i=0
+    for x in sent:
+        if honi[x+1] == "h" or "H":
+            h+=1
+        elif honi["h" or "H" +1] == "o" or "O":
+            o+=1
+        elif honi["o" or "O" +1] == "n" or "N":
+            n+=1
+        elif honi["n" or "N" +1]== "i":
+            i+=1
+    if h == o == n == i:
+        print(h)
+honi("HHHHOOOONNNNIIII") """
+
+def honi(honi):
+    search = "H"
+    for x in honi:
+        
+
+
 

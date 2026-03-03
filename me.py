@@ -28,7 +28,7 @@ def game():
     while gtn != randomnumber:
         gtn2 = int(input("Guess number between 1 and 10:"))
         list = []
-        for i in range (10):
+        for i in range (1):
             list.append(gtn2)
             print ("Wrong guesses:", list)
         if gtn2 > 10:
